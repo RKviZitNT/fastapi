@@ -1,14 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Register</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Register</h1>
-    <form action="/register" method="post">
-        <input type="text" name="username" placeholder="Username" required>
-        <input type="password" name="password" placeholder="Password" required>
-        <input type="submit" value="Register">
-    </form>
+    <div class="register-container">
+        <h2>Register for an Account</h2>
+        <form action="/register" method="post">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Register">
+            {% if message %}
+                {{ message }}
+            {% endif %}
+        </form>
+        <p>Already have an account? <a href="/login">Login here</a></p>
+    </div>
 </body>
 </html>

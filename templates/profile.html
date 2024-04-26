@@ -1,10 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Profile</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Profile</h1>
-    <p>Welcome, {{ username }}!</p>
+    <div class="profile-container">
+        <h2>Welcome, {{ username }}</h2>
+        <div class="profile-info">
+            <p><strong>Email:</strong> user@example.com</p>
+            <p><strong>Account Created:</strong> 2022-01-01</p>
+            <button>Edit Profile</button>
+            <button>Logout</button>
+        </div>
+    </div>
 </body>
 </html>
