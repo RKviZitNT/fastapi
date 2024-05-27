@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Page</title>
+    <title>Profile</title>
     <link rel="stylesheet" href="{{ url_for('static', path='/styles.css') }}">
 </head>
 <body>
     <div class="profile-container">
         <h2>Welcome, {{ username }}</h2>
         <div class="profile-info">
-            <p><strong>Email:</strong> user@example.com</p>
-            <p><strong>Account Created:</strong> 2022-01-01</p>
+            <p><strong>Account Created:</strong> 0001-01-01</p>
             <div class="profile-buttons">
                 <button>Edit Profile</button>
-                <button onclick="window.location.href='/logout'">Logout</button>
+                <button name=logout onclick="window.location.href='/logout'">Logout</button>
             </div>
         </div>
     </div>
